@@ -1,0 +1,82 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+.eggs/
+pip-wheel-metadata/
+share/python-wheels/
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.env/
+
+# --- Testing / coverage ---
+.pytest_cache/
+.cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+pytestdebug.log
+
+# --- Reports generados (pytest-html + crucible) ---
+chatbot-qa-poc/reports/
+reports/
+**/pytest-report.html
+**/crucible-report.html/
+**/scan.json
+**/scan.jsonl
+**/scan.md
+
+# --- Secrets / entorno local ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# --- IDE / OS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Docker ---
+docker-compose.override.yml
+
+# --- Logs / temporales ---
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+
+# --- Archives / paquetes locales ---
+*.tar.gz
+*.zip
+*.tgz

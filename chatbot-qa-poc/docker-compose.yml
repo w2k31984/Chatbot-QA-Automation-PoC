@@ -1,0 +1,10 @@
+services:
+  vulnerable-chatbot:
+    image: cagricihamza/vulnerable-chat:latest
+    platform: linux/amd64
+    container_name: vulnerable-ai-chatbot
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+
+  

@@ -1,0 +1,11 @@
+# scan.yaml
+target:
+  provider: webhook
+  url: "http://localhost:5000/api/chat"
+  response_field: "response"  # Ajusta esto si el bot devuelve otro campo (ej. "reply", "message")
+
+probes:
+  categories:
+    - LLM01  # Prompt Injection
+    - LLM07  # Insecure Plugin Design (o Insecure Tool Use)
+    # Puedes añadir más si lo necesitas
